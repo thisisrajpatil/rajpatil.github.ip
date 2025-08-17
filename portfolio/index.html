@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0b0f" />
+    <title>Alex Doe — Portfolio</title>
+    <meta name="description" content="Designer-developer crafting thoughtful interfaces, performant code, and delightful micro‑interactions." />
+    <meta property="og:title" content="Alex Doe — Portfolio" />
+    <meta property="og:description" content="Designer-developer crafting thoughtful interfaces, performant code, and delightful micro‑interactions." />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23c084fc'/%3E%3Cstop offset='1' stop-color='%236ee7b7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='46' fill='url(%23g)'/%3E%3Ctext x='50' y='58' font-size='42' text-anchor='middle' fill='%230b0b0f' font-family='Inter, sans-serif'%3EAD%3C/text%3E%3C/svg%3E" />
+
+    <link rel="stylesheet" href="./styles.css?v=1" />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="bg-blob blob-a"></div>
+      <div class="bg-blob blob-b"></div>
+      <div class="bg-blob blob-c"></div>
+    </div>
+
+    <div class="page">
+      <aside class="sidenav">
+        <a class="brand" href="#home" aria-label="Go to home">
+          <span class="brand-avatar" aria-hidden="true">⚪</span>
+          <span class="brand-text">Alex Doe</span>
+        </a>
+        <nav class="nav-links" aria-label="Section navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="sidenav-foot">
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+            <span class="sun" aria-hidden="true">☀️</span>
+            <span class="moon" aria-hidden="true">🌙</span>
+          </button>
+        </div>
+      </aside>
+
+      <main class="content">
+        <section id="home" class="section hero" aria-label="Intro">
+          <h1 class="hero-title">
+            Hi, I'm <span class="accent">Alex</span> —
+            <span id="typewriter" class="typewriter" aria-live="polite">building human‑centric products</span>
+          </h1>
+          <p class="hero-sub">
+            I combine design sensibility with engineering rigor to craft interfaces that feel effortless — fast, accessible, and thoughtfully animated.
+          </p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#projects">View work</a>
+            <a class="btn ghost" href="mailto:alex@example.com">Say hello</a>
+          </div>
+        </section>
+
+        <section id="about" class="section" aria-label="About">
+          <header class="section-head">
+            <h2>About</h2>
+            <div class="section-line"></div>
+          </header>
+          <div class="about-grid">
+            <div>
+              <p>
+                I'm a designer‑developer focused on interaction quality, motion, and performance.
+                I love turning ambiguous problems into elegant systems — with measurable impact.
+              </p>
+              <p>
+                Currently exploring design systems, generative UI, and delightful micro‑interactions.
+              </p>
+              <div class="about-cards">
+                <a class="card link" href="https://github.com/" target="_blank" rel="noreferrer">
+                  <span>GitHub</span>
+                  <span class="arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="card link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                  <span>LinkedIn</span>
+                  <span class="arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="card link" href="https://twitter.com/" target="_blank" rel="noreferrer">
+                  <span>Twitter</span>
+                  <span class="arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="highlights">
+              <div class="kpi">
+                <div class="kpi-num">8+ yrs</div>
+                <div class="kpi-label">Experience</div>
+              </div>
+              <div class="kpi">
+                <div class="kpi-num">120ms</div>
+                <div class="kpi-label">Median TTI</div>
+              </div>
+              <div class="kpi">
+                <div class="kpi-num">A11y</div>
+                <div class="kpi-label">First class</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="section" aria-label="Skills">
+          <header class="section-head">
+            <h2>Skills</h2>
+            <div class="section-line"></div>
+          </header>
+          <div class="marquee" aria-label="Tech stack marquee">
+            <div class="marquee-track">
+              <span>TypeScript</span>
+              <span>React</span>
+              <span>Next.js</span>
+              <span>Node</span>
+              <span>GraphQL</span>
+              <span>WebGL</span>
+              <span>Three.js</span>
+              <span>GSAP</span>
+              <span>Framer Motion</span>
+              <span>Figma</span>
+              <span>Design Systems</span>
+              <span>Accessibility</span>
+              <span>Performance</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section" aria-label="Projects">
+          <header class="section-head">
+            <h2>Projects</h2>
+            <div class="section-line"></div>
+          </header>
+          <div class="grid projects">
+            <a class="card project" href="#" aria-label="Open Case Study: Aurora UI">
+              <div class="project-media" role="img" aria-label="Aurora gradient preview"></div>
+              <div class="project-body">
+                <div class="project-title">Aurora UI</div>
+                <p>Design system starter with semantic tokens, motion, and accessible components.</p>
+                <div class="tags"><span>Design System</span><span>TS</span><span>Figma</span></div>
+              </div>
+            </a>
+            <a class="card project" href="#" aria-label="Open Case Study: Pulse">
+              <div class="project-media media-pulse" role="img" aria-label="Data viz animated preview"></div>
+              <div class="project-body">
+                <div class="project-title">Pulse</div>
+                <p>High‑frequency analytics with buttery interactions and sub‑100ms navigation.</p>
+                <div class="tags"><span>React</span><span>GraphQL</span><span>DX</span></div>
+              </div>
+            </a>
+            <a class="card project" href="#" aria-label="Open Case Study: Atelier">
+              <div class="project-media media-atelier" role="img" aria-label="Generative shapes preview"></div>
+              <div class="project-body">
+                <div class="project-title">Atelier</div>
+                <p>Generative art playground exploring geometry, shaders, and motion.</p>
+                <div class="tags"><span>WebGL</span><span>Three.js</span><span>Shaders</span></div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section id="experience" class="section" aria-label="Experience">
+          <header class="section-head">
+            <h2>Experience</h2>
+            <div class="section-line"></div>
+          </header>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="time">2022 — Present</div>
+              <div class="role">Senior Product Engineer · Studio North</div>
+              <p>Led design‑system rollout, improved lighthouse from 68 to 98, authored animation guidelines.</p>
+            </article>
+            <article class="timeline-item">
+              <div class="time">2019 — 2022</div>
+              <div class="role">Design Engineer · River</div>
+              <p>Shipped realtime dashboard, prototyped micro‑interactions, introduced a11y testing pipeline.</p>
+            </article>
+            <article class="timeline-item">
+              <div class="time">2016 — 2019</div>
+              <div class="role">Frontend Engineer · Independent</div>
+              <p>Built small products with big polish; collaborated with teams across timezones.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="section" aria-label="Contact">
+          <header class="section-head">
+            <h2>Contact</h2>
+            <div class="section-line"></div>
+          </header>
+          <div class="contact">
+            <p>Open to freelance and full‑time opportunities. For collaboration or a quick hello:</p>
+            <div class="contact-actions">
+              <a class="btn primary" href="mailto:alex@example.com">alex@example.com</a>
+              <button id="copyEmail" class="btn ghost" data-email="alex@example.com">Copy email</button>
+              <a class="btn" href="./assets/resume.pdf" download>Download CV</a>
+            </div>
+          </div>
+        </section>
+
+        <footer class="foot" aria-label="Footer">
+          <div class="foot-inner">
+            <span>© <span id="year"></span> Alex Doe</span>
+            <a href="#home" class="to-top" aria-label="Back to top">↑ Top</a>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <script src="./script.js?v=1" defer></script>
+  </body>
+</html>
